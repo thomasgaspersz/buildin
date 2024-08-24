@@ -38,7 +38,7 @@ return(
                 placeholder='Wat heb je gedaan...' 
                 name='desc' id='' 
                 className='flex-1 bg-slate-100 rounded-lg p-2'
-                onChange={()=>(e.target.value)}
+                onChange={(e)=>(e.target.value)}
                 ></textarea>
                 <div className=''>
                     <Image src='/emoji.png' alt='' className='w-5 h-5 object-cover rounded-full cursor-pointer self-end' width={20} height={20}></Image>
