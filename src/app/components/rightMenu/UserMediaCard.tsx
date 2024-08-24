@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image' 
 import { User } from '@prisma/client'
-import prisma from '@/lib/client'
+import prisma from '@/app/lib/client'
 
 
 const UserMediaCard = async ({user}:{user:User}) => {

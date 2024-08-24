@@ -1,6 +1,6 @@
 'use client'
 
-import { updateProfile } from "@/lib/actions"
+import { updateProfile } from "@/app/lib/actions"
 import { User } from "@prisma/client"
 import { CldUploadWidget } from "next-cloudinary"
 import Image from "next/image"

@@ -1,6 +1,6 @@
 'use client'
 
-import { switchLike } from "@/lib/actions"
+import { switchLike } from "@/app/lib/actions"
 import { useAuth } from "@clerk/nextjs"
 import Image from "next/image"
 import { useOptimistic, useState } from "react"
