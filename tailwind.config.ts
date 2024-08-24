@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+//https://tailwindcss.com/docs/screens to set other screen options
 
 const config: Config = {
   content: [
