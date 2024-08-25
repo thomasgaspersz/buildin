@@ -1,4 +1,4 @@
-'use server'
+'use server'// dit hoeft eigenlijk niet
 
 import prisma from "@/lib/client"
 import { auth } from "@clerk/nextjs/server"
