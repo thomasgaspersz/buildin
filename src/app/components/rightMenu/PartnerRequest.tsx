@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { auth,  } from "@clerk/nextjs/server"
-import prisma from "@/app/lib/client"
+import prisma from "@/lib/client"
 import PartnerRequestList from "./PartnerRequestList"
 
 //YT:3:37:52

@@ -1,13 +1,13 @@
 'use client'
 
-import prisma from "@/app/lib/client"
+import prisma from "@/lib/client"
 import { useUser } from "@clerk/nextjs"
 import { auth } from "@clerk/nextjs/server"
 import { CldUploadWidget } from "next-cloudinary"
 import Image from "next/image"
 import { useState } from "react"
 import AddPostButton from "./AddPostButton"
-import { addPost } from "@/app/lib/actions"
+import { addPost } from "@/lib/actions"
 
 const AddPost = () => {
 

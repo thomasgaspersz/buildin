@@ -1,6 +1,6 @@
 'use client'
 
-import { addComment } from "@/app/lib/actions";
+import { addComment } from "@/lib/actions";
 import { useUser } from "@clerk/nextjs";
 import { Comment, User } from "@prisma/client";
 import Image from "next/image"

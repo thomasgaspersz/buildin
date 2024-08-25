@@ -1,4 +1,4 @@
-import prisma from '@/app/lib/client'
+import prisma from '@/lib/client'
 import Image from 'next/image'
 import CommentList from './CommentList'
 

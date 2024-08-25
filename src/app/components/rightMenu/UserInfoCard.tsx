@@ -1,4 +1,4 @@
-import prisma from "@/app/lib/client"
+import prisma from "@/lib/client"
 import { auth } from "@clerk/nextjs/server"
 import { User } from "@prisma/client"
 import Image from "next/image"

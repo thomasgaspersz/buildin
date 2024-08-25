@@ -1,6 +1,6 @@
 "use client";
 
-import { addStory } from "@/app/lib/actions";
+import { addStory } from "@/lib/actions";
 import { useUser } from "@clerk/nextjs";
 import { Story, User } from "@prisma/client";
 import { CldUploadWidget } from "next-cloudinary";

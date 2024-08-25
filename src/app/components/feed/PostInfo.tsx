@@ -1,6 +1,6 @@
 'use client'
 
-import { deletePost } from "@/app/lib/actions"
+import { deletePost } from "@/lib/actions"
 import Image from "next/image"
 import { useState } from "react"
 
