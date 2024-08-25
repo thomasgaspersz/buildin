@@ -1,3 +1,5 @@
+'use server'
+
 import prisma from "@/lib/client"
 import { auth } from "@clerk/nextjs/server"
 import Image from "next/image"
@@ -22,7 +24,6 @@ const ProfileCard = async () => {
         }
     })
 
-    console.log(user)
     if (!user) return null
     
 
