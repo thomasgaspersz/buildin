@@ -11,9 +11,8 @@ type FeedPostType = PostType & {user: User} & {
   _count:{comments:number}
 }
 
-const {userId} = auth()
-
 const Post = ({post}:{post:FeedPostType}) => {
+  const {userId} = auth()
   return (
     <div className='flex flex-col gap-4 overflow-hidden'>
         {/*USER*/}
