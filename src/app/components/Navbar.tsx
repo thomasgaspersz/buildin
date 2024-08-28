@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className='h-24 flex items-center justify-between'>
       {/*LEFT*/}
       <div className='md:hidden lg:block w-[20%]'>
-      <Link className='font-extrabold text-3xl' href="/">BUILDINGER.</Link>
+      <Link className='font-extrabold text-3xl' href="/">BUILDR.</Link>
       </div>
       {/*CENTER*/}
       <div className='hidden md:flex w-[50%] text-sm items-center justify-between'>
