@@ -204,7 +204,7 @@ export const updateProfile = async (
         school:z.string().max(60).optional(),
         work:z.string().max(60).optional(),//job category
         business:z.string().max(60).optional(),
-        aboutUs:z.string().max(60).optional(),
+        aboutUs:z.string().max(255).optional(),
         website:z.string().max(60).optional(),
     })
 
