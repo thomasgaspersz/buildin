@@ -155,7 +155,7 @@ const UpdateUser = ({user}:{user: User}) => {
                   type="text"
                   placeholder={user.aboutUs || "Apple Inc."}
                   className="ring-1 ring-gray-300 p-[13px] rounded-md text-sm"
-                  name="about"
+                  name="aboutUs"
                 />
               </div>
               {/* INPUT */}
