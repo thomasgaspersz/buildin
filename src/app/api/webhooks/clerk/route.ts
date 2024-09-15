@@ -61,6 +61,8 @@ if(eventType === 'user.created') {
         await prisma.user.create({
             data:{ 
                 id: evt.data.id,
+                name: JSON.parse(body).data.first_name,
+                surname: JSON.parse(body).data.last_name,
                 username: JSON.parse(body).data.username,
                 avatar: JSON.parse(body).data.image_url || '/noAvatar.png',
                 cover: '/noCover.png',
@@ -81,6 +83,8 @@ if(eventType === 'user.updated') {
                 id: evt.data.id,
             },
             data:{ 
+                name: JSON.parse(body).data.first_name,
+                surname: JSON.parse(body).data.last_name,
                 username: JSON.parse(body).data.username,
                 avatar: JSON.parse(body).data.image_url || '/noAvatar.png',
                 email: JSON.parse(body).data.email_addresses[0].email_address || '',
