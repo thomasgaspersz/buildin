@@ -81,7 +81,8 @@ if(eventType === 'user.updated') {
                 id: evt.data.id,
             },
             data:{ 
-                 
+                name: JSON.parse(body).data.name || '',
+                surname: JSON.parse(body).data.surname || '',  
                 username: JSON.parse(body).data.username,
                 avatar: JSON.parse(body).data.image_url || '/noAvatar.png',
                 email: JSON.parse(body).data.email_addresses[0].email_address || '',

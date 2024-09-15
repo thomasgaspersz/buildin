@@ -4,6 +4,7 @@ import { addComment } from "@/lib/actions";
 import { useUser } from "@clerk/nextjs";
 import { Comment, User } from "@prisma/client";
 import Image from "next/image"
+import { useRouter } from "next/navigation" // met wel de navigation zijn en niet de root.
 import { useOptimistic, useState } from "react";
 //YT 4:53:18
 
@@ -19,6 +20,8 @@ const CommentList = ({
 const {user} = useUser()        // server side hook van Clerk voor React - auth() is voor serverside
 const [commentState, setCommentState] = useState(comments)
 const [desc, setDesc] = useState('')
+
+const router = useRouter()
 
 const add = async () =>{
     if(!user || !desc) return
@@ -53,6 +56,8 @@ const add = async () =>{
 
          })
         setCommentState(prev => [createdComment, ...prev])
+        router.refresh()//deze zorgt nu voor het refreshen van de huidige pagina waardoor je de comments counts ziet verhogen. (methode 2 in de eigen documentatie)
+
     } catch (err) {
         
     }

@@ -17,6 +17,7 @@ const UpdateUser = ({user}:{user: User}) => {
     success:false,
     error: false
   })
+  
   const router = useRouter()
 
   const handleClose = () => {
